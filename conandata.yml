@@ -1,4 +1,8 @@
 sources:
-  "1.0.0":
-    url: "https://github.com/libauthor/libname"
-    sha256: "98f6f57aab0a424469619ed3047728f0d3901ce8f0dea919c11e7966d807e870"
+  "5.2.4":
+    url: "https://www.lua.org/ftp/lua-5.2.4.tar.gz"
+    sha256: "b9e2e4aad6789b3b63a056d442f7b39f0ecfca3ae0f1fc0ae4e9614401b69f4b"
+patches:
+  "5.2.4":
+    - patch_file: "patches/5.2.4/lua_mobile.patch"
+      base_path: "source_subfolder/src"
