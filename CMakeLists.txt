@@ -41,9 +41,10 @@ ${SOURCE_DIR}/src/lapi.c ${SOURCE_DIR}/src/lauxlib.c ${SOURCE_DIR}/src/lbaselib.
 ${SOURCE_DIR}/src/lctype.c ${SOURCE_DIR}/src/ldblib.c ${SOURCE_DIR}/src/ldebug.c ${SOURCE_DIR}/src/ldo.c ${SOURCE_DIR}/src/ldump.c ${SOURCE_DIR}/src/lfunc.c ${SOURCE_DIR}/src/lgc.c
 ${SOURCE_DIR}/src/linit.c ${SOURCE_DIR}/src/liolib.c ${SOURCE_DIR}/src/llex.c ${SOURCE_DIR}/src/lmathlib.c ${SOURCE_DIR}/src/lmem.c ${SOURCE_DIR}/src/loadlib.c ${SOURCE_DIR}/src/lobject.c
 ${SOURCE_DIR}/src/lopcodes.c ${SOURCE_DIR}/src/loslib.c ${SOURCE_DIR}/src/lparser.c ${SOURCE_DIR}/src/lstate.c ${SOURCE_DIR}/src/lstring.c ${SOURCE_DIR}/src/lstrlib.c
-${SOURCE_DIR}/src/ltable.c ${SOURCE_DIR}/src/ltablib.c ${SOURCE_DIR}/src/ltm.c ${SOURCE_DIR}/src/lundump.c ${SOURCE_DIR}/src/lutf8lib.c ${SOURCE_DIR}/src/lvm.c ${SOURCE_DIR}/src/lzio.c
+${SOURCE_DIR}/src/ltable.c ${SOURCE_DIR}/src/ltablib.c ${SOURCE_DIR}/src/ltm.c ${SOURCE_DIR}/src/lundump.c ${SOURCE_DIR}/src/lvm.c ${SOURCE_DIR}/src/lzio.c
 )
-
+# Only in 5.3
+# ${SOURCE_DIR}/src/lutf8lib.c
 IF (COMPILE_AS_CPP)
     SET_SOURCE_FILES_PROPERTIES(${SRC_LIBLUA} ${SOURCE_DIR}/src/lua.c ${SOURCE_DIR}/src/luac.c PROPERTIES LANGUAGE CXX)
 ELSE ()
